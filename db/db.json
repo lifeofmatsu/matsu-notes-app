@@ -5,7 +5,7 @@
     },
     {
         "title": "Example Note by matsu",
-        "text": "This note demonstrates the usability of the Note Taking application by matsu.\n\n     - A note can be written by typing in the title/body text fields.\n     - A note can be saved by clicking the 'Save Note' button in the top right.\n     - A note can be cleared by clicking the 'Clear Form' button also in the top right.\n     - A saved note can be deleted by clicking the red trash can icon that appears next \n       to the note title in the sidebar to the left.",
-        "id": "a8d86580-8bc3-4ba8-9471-e49450e67c5a"
+        "text": "This note demonstrates the usability of the Note Taking application by matsu.\n\n        - A note can be written by typing in the title/body text fields.\n        - A note can be saved by clicking the 'Save Note' button in the top right.\n        - A note can be cleared by clicking the 'Clear Form' button also in the top right.\n        - A saved note can be deleted by clicking the red trash can icon that appears next \n          to the note title in the sidebar to the left.",
+        "id": "abddbac4-24d9-437d-9faf-c5770c7546db"
     }
 ]
