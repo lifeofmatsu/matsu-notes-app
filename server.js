@@ -17,7 +17,9 @@ app.get('/notes', (req, res) => {
 
 //GET route to return all saved notes
 app.get('/api/notes', (req, res) => {
+    console.log("endpoint was hit");
     const notes = readDb();
+    console.log(notes);
     res.json(notes);
 });
   
@@ -45,13 +47,13 @@ app.delete('/api/notes/:id', (req, res) => {
 
 //read from db.json
 const readDb = () => {
-    const data = fs.readFileSync(path.join(__dirname, 'db.json'), 'utf8');
+    const data = fs.readFileSync(path.join(__dirname, './db/db.json'), 'utf8');
     return JSON.parse(data);
 }
 
 //write to db.json
 const writeDb = (data) => {
-    fs.writeFileSync(path.join(__dirname, 'db.json'), JSON.stringify(data, null, 4));
+    fs.writeFileSync(path.join(__dirname, './db/db.json'), JSON.stringify(data, null, 4));
 }
 
 //DEFAULT route to serve index.html
