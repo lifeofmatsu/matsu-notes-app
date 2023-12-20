@@ -1,3 +1,8 @@
+/* 
+Starter code provided by UCSD Full-Stack Web Dev Bootcamp with EdX.
+Contributors: Xandromus, nol166, and Georgeyoo
+*/
+
 html,
 body {
     height: 100%;
@@ -26,6 +31,7 @@ body {
 
 .note-textarea {
     resize: none;
+    min-height: 150px;
     height: calc(100% - 63px);
     padding-top: 15px;
 }
