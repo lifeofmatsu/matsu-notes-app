@@ -10,9 +10,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-//DEFAULT route to serve index.html
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+//route to serve notes.html
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'notes.html'));
 });
 
 //GET route to return all saved notes
@@ -54,10 +54,11 @@ const writeDb = (data) => {
     fs.writeFileSync(path.join(__dirname, 'db.json'), JSON.stringify(data, null, 4));
 }
 
+//DEFAULT route to serve index.html
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
-
-
-  
-  
